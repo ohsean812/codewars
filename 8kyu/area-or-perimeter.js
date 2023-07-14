@@ -19,6 +19,6 @@ const areaOrPerimeter = function(l , w) {
 };
 
 // refactored
-const areaOrPerimeter = function(l , w) {
+const areaOrPerimeterRefactored = function(l , w) {
   return (l === w) ? (l * w) : (l + w)*2
 };
