@@ -16,3 +16,10 @@
 function makeNegative(num) {
     return (num > 0) ? (-1 * num) : num
 }
+
+
+// Refactored (solution from others)
+
+// function makeNegativeRefactored(num) {
+//     return -Math.abs(num)
+// }
