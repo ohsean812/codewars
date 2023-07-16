@@ -6,3 +6,11 @@
 function boolToWord( bool ){
   return bool == true ? "Yes" : "No"
 }
+
+
+// Refactored
+
+function boolToWord( bool ){
+    return bool ? "Yes" : "No"
+}
+  
