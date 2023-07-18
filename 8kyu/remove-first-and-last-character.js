@@ -10,3 +10,10 @@ function removeChar(str){
     let joinedArray = stringCharacters.join("")
     return joinedArray;
 };
+
+
+// Refactored
+
+function removeChar(str){
+    return str.slice(1, -1)
+};
