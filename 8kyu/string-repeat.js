@@ -8,9 +8,16 @@
 // My Solution
 
 function repeatStr (n, s) {
-    let emptyString = ""
+    let myString = ""
     for (let i = 0; i < n; i++){
-      emptyString += s
+      myString += s
     }
-    return emptyString;
+    return myString;
+}
+
+
+// Refactored
+
+function repeatStrRefactored (n, s) {
+    return s.repeat(n);
 }
