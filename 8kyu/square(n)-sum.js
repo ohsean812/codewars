@@ -10,3 +10,7 @@ function squareSum(numbers){
     numbers.map(number => sum += number ** 2)
     return sum
 }
+
+
+// Notes:
+// A reduce method could be ideal to use in this case.
