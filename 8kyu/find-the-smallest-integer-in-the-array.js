@@ -14,3 +14,12 @@ class SmallestIntegerFinder {
       return Math.min(...args)
     }
 }
+
+
+// Other Solution using .sort() Method
+
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return args.sort((a, b) => a - b)[0]
+    }
+}
