@@ -22,3 +22,10 @@ function countSheeps(arrayOfSheep) {
     }
     return sheep;
 }
+
+
+// Refactored
+
+function countSheeps(arrayOfSheep) {
+    return arrayOfSheep.filter(element => element == true).length
+}
