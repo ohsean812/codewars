@@ -17,8 +17,16 @@ function abbrevName(name){
     
     for (let i = 0; i < letters.length; i++){
       if (letters[i] == " "){
-        return letters[0] + "." + letters[i+1]
+        return letters[0].toUpperCase() + "." + letters[i+1].toUpperCase()
       }
-    }
-    
+    }   
+
+}
+
+
+// Refactored
+
+function abbrevName(name){
+    let words = name.split(" ")
+    return (words[0][0] + "." + words[1][0]).toUpperCase()
 }
