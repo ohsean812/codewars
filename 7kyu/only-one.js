@@ -46,3 +46,12 @@ function onlyOne() {
 }
 
 // "arguments" is a built-in object that you can access within a function, even if no parameter has been assigned.
+// note this is not an array, but it's an "array-like" object which array methods will NOT work on.
+
+
+// Re-refactored
+
+function onlyOne() {
+    let args = [...arguments]
+    return args.filter(Boolean).length === 1 
+}
