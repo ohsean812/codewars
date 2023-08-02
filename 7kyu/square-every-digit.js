@@ -22,3 +22,21 @@ function squareDigits(num){
     let joinnum = concatenum.join("")
     return parseInt(joinnum)
 }
+
+
+// Refactored using .map
+
+function squareDigits(num){
+    let stringnum = num.toString()
+    let indnum = stringnum.split("")
+    let squared = indnum.map(n => n ** 2).join("")
+    return parseInt(squared)
+}
+
+
+// Re-refactored inspired by solutions from others
+
+// return parseInt(num.toString().split("").map(n => n ** 2).join(""))
+// return Number(num.toString().split("").map(n => n ** 2).join(""))
+// return +(num.toString().split("").map(n => n ** 2).join(""))
+// return +num.toString().split("").map(n => n ** 2).join("")
