@@ -17,3 +17,10 @@ function disemvowel(str) {
 
 
 // Note to myself: learn RegEx
+
+
+// Solution from Codewars using RegEx
+
+function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '');
+}
