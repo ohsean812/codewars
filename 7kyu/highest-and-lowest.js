@@ -21,3 +21,11 @@ function highAndLow(numbers){
     let comboString = combo.toString().replace(",", " ")
     return comboString
 }
+
+
+// Refactored inspired by solutions from others
+
+function highAndLow(numbers){
+    let indNum = numbers.split(" ")
+    return `${Math.max(...indNum)} ${Math.min(...indNum)}`
+}
