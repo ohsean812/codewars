@@ -25,3 +25,10 @@ var isSquare = function(n){
     let sqrt = Math.sqrt(n)
     return Number.isInteger(sqrt)
 }
+
+
+// Refactored
+
+function isSquare(n) {
+    return Math.sqrt(n) % 1 === 0;
+}
