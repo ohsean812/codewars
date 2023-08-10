@@ -19,3 +19,10 @@ function isIsogram(str){
     }
     return true
 }
+
+
+// Restructured
+
+function isIsogram(str){
+    return new Set(str.toLowerCase()).size == str.length
+}
