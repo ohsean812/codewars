@@ -23,3 +23,10 @@ function roundToNext5(n){
     }
     return n
 }
+
+
+// Abstracted from others' solution
+
+function roundToNext5(n){
+    return Math.ceil(n/5)*5
+}
