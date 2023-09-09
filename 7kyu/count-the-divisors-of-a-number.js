@@ -20,3 +20,22 @@ function getDivisorsCnt(n){
     }
     return divisors
 }
+
+
+// Optimized for big tests (from other solutions)
+
+function getDivisorsCnt(n) {
+    let divisors = 0;
+    for (let i = 1; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        // If i is a divisor, then there is a corresponding divisor n/i
+        if (n / i === i) {
+          divisors++;
+        } else {
+          // Both i and n/i are divisors
+          divisors += 2;
+        }
+      }
+    }
+    return divisors;
+}
