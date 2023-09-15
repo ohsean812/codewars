@@ -25,5 +25,7 @@ function arithmetic(a, b, operator){
             return a * b;
         case "divide":
             return a / b;
+        default:
+            return "Invalid Operator"
     }
 }
