@@ -18,3 +18,10 @@ function twoOldestAges(ages){
     oldest.push(firstOld)
     return oldest
 }
+
+
+// Refactored
+
+function twoOldestAges(ages){
+    return ages.sort((a, b) => a - b).slice(-2)
+}
