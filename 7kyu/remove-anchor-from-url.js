@@ -16,3 +16,10 @@ function removeUrlAnchor(url){
       }
     }
 }
+
+
+// Refactored
+
+function removeUrlAnchor(url){
+    return url.split('#')[0];
+}
