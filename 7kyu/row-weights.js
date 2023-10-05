@@ -39,3 +39,13 @@ function rowWeights(array){
     results.push(team2)
     return results
 }
+
+
+// Refactored
+
+function rowWeights(array){
+    let results = [0, 0]
+    for (let i = 0; i < array.length; i++){
+      (i % 2 === 0) ? (results[0] += array[i]) : (results[1] += array[i])
+    } return results
+}
