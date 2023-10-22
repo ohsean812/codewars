@@ -14,3 +14,10 @@ function smallEnough(a, limit){
     }
     return overCount > 0 ? false : true
 }
+
+
+// Refactored
+
+function smallEnough(a, limit){
+    return Math.max(...a) <= limit
+}
