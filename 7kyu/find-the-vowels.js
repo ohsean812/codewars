@@ -18,9 +18,14 @@
 function vowelIndices(word){
     let vowels = []
     for (let i = 0; i < word.length; i++){
-      if (word[i] === "a" || word[i] === "e" || word[i] === "i" || word[i] === "o" || word[i] === "u" || word[i] === "y"){
+      if (word[i].toLowerCase() === "a"
+      || word[i].toLowerCase() === "e"
+      || word[i].toLowerCase() === "i"
+      || word[i].toLowerCase() === "o"
+      || word[i].toLowerCase() === "u"
+      || word[i].toLowerCase() === "y"){
           vowels.push(i+1)
-        }
+          }
     }
     return vowels
 }
